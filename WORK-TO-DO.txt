@@ -1,0 +1,9 @@
+***Create Neccessary API files
+***Create Neccessary DB Tables
+***Create Sign Up Page
+***create posts page where users post will display
+***working post upload
+fetch posts and data
+connect frontend with backend
+Use Sessions
+Make webapp responsive

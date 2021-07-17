@@ -1,0 +1,39 @@
+* {
+  margin: 0 !important;
+}
+.icon {
+  height: 100% !important;
+  color: rgb(177, 172, 172);
+  margin: 0 !important;
+  margin-left: 5px !important;
+  padding: 0 !important;
+  cursor: pointer;
+}
+.profile-row {
+  margin-top: 10px !important;
+}
+
+input {
+  margin: 0 !important;
+  padding: 10px !important;
+}
+.container-row {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.date {
+  margin-top: 20px !important;
+  align-self: center;
+}
+.make-margin {
+  margin-left: auto;
+}
+.center-container {
+  height: 88vh !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.profile-heading {
+  font-weight: 600;
+  letter-spacing: 0.65em;
+  text-shadow: 4px 1px rgb(202, 199, 199);
+}

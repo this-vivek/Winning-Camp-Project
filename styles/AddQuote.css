@@ -1,0 +1,155 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.post-wrapper {
+  height: 40vh;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-text {
+  width: 50%;
+  height: 80%;
+  font-weight: 500;
+  padding: 5px;
+}
+.input-box {
+  margin-top: 100px;
+  width: 100%;
+  height: 12vh;
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-box h3 {
+  font-weight: 600;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+.post {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.post textarea {
+  height: 100%;
+  width: 90%;
+  font-size: 3em;
+  background-color: rgb(33, 33, 33);
+  color: white;
+  text-transform: capitalize;
+  padding: 3%;
+}
+
+.options {
+  height: 20%;
+  width: 81%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.colors,
+.bold,
+.italic,
+.underline,
+.textstyle {
+  height: 100% !important;
+  cursor: pointer;
+}
+.colors {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+.bold,
+.italic,
+.underline {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+.underline {
+  border-right: 0px;
+}
+.textstyle {
+  width: 30%;
+}
+.submit-div {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid rgb(58, 57, 57);
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.submit-div button {
+  background-color: white;
+  border: 0px;
+  text-align: center;
+}
+.submit-div button a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+  font-size: 1.2em;
+}
+.colors select {
+  height: 100%;
+  width: 100%;
+}
+.textstyle select {
+  height: 100%;
+  width: 100%;
+}
+.underline a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 500;
+  color: black;
+}
+.italic a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 500;
+  color: black;
+}
+.bold a {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 500;
+  color: black;
+}
+.style-button {
+  border: 1px ridge black;
+  background-color: rgb(33, 33, 33);
+}
+.style-button a {
+  color: white;
+}
+.bolder {
+  font-weight: bold;
+}
+.italicer {
+  font-style: italic;
+}
+.underliner {
+  text-decoration: underline;
+}

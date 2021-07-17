@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+    
+    <div class="container-wrapper">
+        <div class="out-layer ">
+            <div class="in-layer  ">
+                <div class="carousel-wrapper">
+                    
+                        <div class="carousel slide  bg-white " data-ride="carousel" id="headerCarousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row d-flex align-items-center justify-content-center ">
+                                        <div class="col-lg p-4 col-sm-7 align-self-center">
+                                            <div>
+                                                <h1 class="text-center">Walt Disney</h1>
+                                                <p class="lead text-center">“The Best Way To Get Started Is To Quit Talking And Begin Doing.”</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="carousel-item  ">
+                                    <div class="row d-flex align-items-center justify-content-center ">
+                                        <div class="col-lg p-4 col-sm-7 align-self-center">
+                                            <div>
+                                                <h1 class="text-center">Winston Churchill</h1>
+                                                <p class="lead text-center">“The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees
+                                                    Opportunity In Every Difficulty.”</p>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <a href="#headerCarousel" class="carousel-control-prev" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a href="#headerCarousel" class="carousel-control-next" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    
+                </div>
+                <div class="user-wrapper">
+                    <div class="form-wrapper ">
+                        <div class="heading">
+                            <div class="title ">
+                                <h6 class=" heading-text" style="font-family: 'Raleway', sans-serif;">Quotation-Web</h6>
+                            </div>
+                            <div class="sub-title ">
+                                <p class="text-muted">-Feel, Think & Write. Yes Nostalgia</p>
+                            </div>
+                            
+                        </div>
+                        <form  id="loginForm" class="d-block" method="POST" action="./api/login.php">
+                            <div class="form-group">
+                              
+                              <input type="text" name="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                              
+                              <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary login">login</button>
+                            <p class="lead text-center">OR</p>
+                            <p class="text-center mt-1 mb-0">Not having an account</p>
+
+                            <button type="button" id="controlButton" class="btn btn-secondary singup mt-0">Create Account</button>
+                          </form>
+                          
+                        
+                          <form method="POST" class="d-none" id="signUpForm" action="./api/signup.php">
+                                <div class="form-row">
+                                  <div class="form-group col-md-6"> 
+                                    <label for="inputUsername">Name</label>
+                                    <input type="text" class="form-control" name="name" id="inputUsername" placeholder="Name">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                  </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="password">Password</label>
+                                      <input type="password" class="form-control" id="password" placeholder="Password">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="cpassword">Confirm Password</label>
+                                      <input type="password" class="form-control" name="password" id="cpassword" placeholder="Confirm Password">
+                                    </div>
+                                  </div>
+                
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="Mobile">Mobile</label>
+                                    <input type="Number" class="form-control" name="mobile"  placeholder="Mobile Number" id="Mobile">
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                    <label for="DOB">Date of Birth</label>
+                                    <input type="Date" class="form-control" name="DOB" id="DOB">
+                                  </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary singup ">Sign in</button>
+                              </form>
+                          
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+</script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+</script>
+<script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#controlButton").click(function(){
+            $("#loginForm").addClass("d-none");
+            $("#loginForm").removeClass("d-block");
+            $("#signUpForm").addClass("d-block");
+        })
+        $("#controlButton2").click(function(){
+            $("#signUpForm").addClass("d-none");
+            $("#signUpForm").removeClass("d-block");
+            $("#loginForm").addClass("d-block");
+        })
+    })
+   
+</script>
+</body>
+</html>
