@@ -64,7 +64,8 @@
 .bold,
 .italic,
 .underline,
-.textstyle {
+.textstyle,
+.category {
   height: 100% !important;
   cursor: pointer;
 }
@@ -86,7 +87,11 @@
   border-right: 0px;
 }
 .textstyle {
-  width: 30%;
+  width: 15%;
+}
+.category {
+  width: 15%;
+  height: 100%;
 }
 .submit-div {
   width: 10%;
@@ -116,6 +121,10 @@
   width: 100%;
 }
 .textstyle select {
+  height: 100%;
+  width: 100%;
+}
+.category select {
   height: 100%;
   width: 100%;
 }

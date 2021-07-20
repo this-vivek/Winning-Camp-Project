@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php 
+ require("../common/session_mng.php");
+ if(!checkSession()){
+    header("Location: http://localhost:8080/quotation");
+ }
+
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Quote</title>
+    <?php require_once("../common/links.php");?>
 </head>
-<?php require_once("../common/links.php");?>
 
-<body>
+
+<body> <?php require_once("../common/navAddPost.php");?>
     <link rel="stylesheet" type="text/css" href="../styles/AddQuote.css">
+    <div class="alert">
+        <span class="fas fa-exclamation-circle"></span>
+        <span class="msg">Message: Post Added Successfully!</span>
+        <div class="close-btn">
+            <span class="fas fa-times"></span>
+        </div>
+    </div>
     <div class="wrapper">
-        <?php require_once("../common/nav.php");?>
+
         <div class="input-box">
             <h3> Add Posts</h3>
             <input type="text" name="content" required id="enter" class="input-text" placeholder="Enter Here">
@@ -46,8 +62,15 @@
                         <option value="cursive">cursive</option>
                     </select>
                 </div>
+                <div class="category">
+                    <select name="category" id="category">
+                        <option value="Sad">Sad</option>
+                        <option value="Inspirational">Inspirational</option>
+                        <option value="Joy">Joy</option>
+                    </select>
+                </div>
                 <div class="submit-div">
-                    <button><a>Post</a></button>
+                    <button style="color:black"><a style="color:black">Post</a></button>
                 </div>
             </div>
         </div>
@@ -55,8 +78,7 @@
 
 
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
+    <?php require("../common/jslinks.php");?> <script>
     $(document).ready(function() {
         $("#enter").keyup(function() {
             var name = $("#enter").val();
@@ -131,7 +153,7 @@
             let italic = $("#italic").hasClass("style-button");
             let bold = $("#bold").hasClass("style-button");
             let underline = $("#underline").hasClass("style-button");
-            let category = "sad";
+            let category = $("#category").val();;
             // $.get("../api/submit-post.php?content=", {
             //     content: content,
             //     bg: bg,
@@ -156,7 +178,8 @@
                     category: category
                 },
                 success: function(response) {
-                    alert("Data Loaded: " + response);
+                    window.location.href =
+                        "http://localhost:8080/quotation/index.php?msg=success";
                 },
                 error: function(xhr) {
                     //Do Something to handle error
@@ -165,7 +188,11 @@
             });
             console.log("done");
         })
-    })
+    });
+    $('.close-btn').click(function() {
+        $('.alert').removeClass("show");
+        $('.alert').addClass("hide");
+    });
     </script>
 </body>
 

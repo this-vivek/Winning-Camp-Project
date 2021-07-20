@@ -3,7 +3,13 @@
 ***Create Sign Up Page
 ***create posts page where users post will display
 ***working post upload
-fetch posts and data
-connect frontend with backend
-Use Sessions
+***fetch posts and data
+***connect frontend with backend
+***Use Sessions
+***add custom alert
+***add Title, and category button in addpost and updatepost
+***add like functionality
+inspirational data is not displaying
+light background in posts
+add validations
 Make webapp responsive

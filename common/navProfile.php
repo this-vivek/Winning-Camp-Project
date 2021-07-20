@@ -1,6 +1,6 @@
 <nav class="navbar  navbar-inverse fixed-top navbar-expand-lg navbar-dark bg-dark ">
     <div class="container-fluid">
-        <a href="index.php" class="navbar-brand"><img src="./images/quotes.svg" width="40px" height="40px"
+        <a href="../index.php" class="navbar-brand"><img src="../images/quotes.svg" width="40px" height="40px"
                 class="m-0 p-0" alt="logo"> <span class="lead">"Quotation"</span></a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -13,17 +13,17 @@
         </form>
         <div class="collapse float-right navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-lg-auto ml-sm-auto ">
+                <li class="nav-item ">
+                    <a href="../index.php" class="nav-link ml-lg-4">Home</a>
+                </li>
+                <li class="nav-item ">
+                    <a href="addQuote.php" class="nav-link">Add Posts</a>
+                </li>
                 <li class="nav-item active">
-                    <a href="../index.php" class="nav-link ml-lg-4">Home <span class="sr-only">(current)</span></a>
+                    <a href="profile.php" class="nav-link">Profile </a>
                 </li>
                 <li class="nav-item ">
-                    <a href="./pages/addQuote.php" class="nav-link">Add Posts</a>
-                </li>
-                <li class="nav-item ">
-                    <a href="./pages/profile.php" class="nav-link">Profile</a>
-                </li>
-                <li class="nav-item ">
-                    <a href="./api/logout.php" class="nav-link">logout</a>
+                    <a href="../api/logout.php" class="nav-link">logout</a>
                 </li>
 
                 <li class="nav-item dropdown d-sm-block d-lg-none">

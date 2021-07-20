@@ -10,7 +10,11 @@
 
 
     <?php require_once("../common/nav.php");?>
+    <?php
 
+
+
+?>
     <!-- carousel here -->
 
     <div class="container-fluid  animated  mt-5 d-sm-none d-lg-block">

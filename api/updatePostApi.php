@@ -1,6 +1,7 @@
 <?php
 require_once("../common/connection.php");
 session_start();
+$id=$_GET["id"];
 $username=$_SESSION["username"];
 $name=$_SESSION["name"];
 $post_title="xyz";
@@ -13,8 +14,9 @@ $font_style=$_GET["font"];
 $likes=0;
 $status=1;
 $category=$_GET["category"];
-$sql="INSERT into posts (username,name,post_title,post_content,bold,italic,underline,bg_color,font_style,likes,status,category)
-VALUES('$username','$name','$post_title','$post_content','$bold','$italic','$underline','$bg_color','$font_style','$likes','$status','$category')";
+$sql="UPDATE posts set post_title='$post_title',post_content='$post_content',
+bold='$bold',italic='$italic',underline='$underline',bg_color='$bg_color',
+font_style='$font_style',likes='$likes',status='$status',category='$category' where id=$id";
 
 if($conn->query($sql)==TRUE){
     echo "success";
@@ -27,9 +29,9 @@ $conn->close();
 <?php
 
 function options_check($op){
-if($op=="true"){
-return 1;
-}
-return 0;
-}$conn->close();
+    if($op=="true"){
+    return 1;
+    }
+    return 0;
+    }
 ?>
